@@ -22,7 +22,7 @@
 •HTML/CSS/JavaScript
 
 # Contributors
-•Your Ayesh Perera
+•Ayesh Perera
 
 # License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
