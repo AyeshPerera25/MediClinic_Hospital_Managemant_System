@@ -8,7 +8,7 @@ public class PatientTM {
     private String nic;
     private String firstName;
     private String lastName;
-    private Date dateOfBirth;
+    private String dateOfBirth;
     private Gender genderType;
     private String address;
     private String email;
@@ -18,7 +18,7 @@ public class PatientTM {
     public PatientTM() {
     }
 
-    public PatientTM(String nic, String firstName, String lastName, Date dateOfBirth, Gender genderType, String address, String email, String contact, int age) {
+    public PatientTM(String nic, String firstName, String lastName, String dateOfBirth, Gender genderType, String address, String email, String contact, int age) {
         this.nic = nic;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -54,11 +54,11 @@ public class PatientTM {
         this.lastName = lastName;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
