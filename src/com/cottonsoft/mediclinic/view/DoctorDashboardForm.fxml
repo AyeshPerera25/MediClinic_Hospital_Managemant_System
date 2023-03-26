@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="doctorDashboardContext" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1267.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cottonsoft.mediclinic.controller.DoctorDashboardFormController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1267.0" style="-fx-background-color: #282A3A;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="56.0" prefWidth="1267.0" style="-fx-background-color: #00BFA6;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <Shadow blurType="GAUSSIAN" height="183.83" radius="45.4575" width="0.0" />
+               </effect>
+            </AnchorPane>
+            <ImageView fx:id="imgPatientsManagment" fitHeight="569.0" fitWidth="569.0" layoutX="719.0" layoutY="294.0" opacity="0.0" AnchorPane.bottomAnchor="-31.0" AnchorPane.rightAnchor="-21.0">
+               <image>
+                  <Image url="@../assets/Hospital%20bed-pana.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgFemaleDoctor" fitHeight="588.0" fitWidth="588.0" layoutX="719.0" layoutY="280.0" visible="false" AnchorPane.bottomAnchor="-36.0" AnchorPane.rightAnchor="-40.0">
+               <image>
+                  <Image url="@../assets/Medicine-cuate%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgMaleDoctor" fitHeight="555.0" fitWidth="555.0" layoutX="765.0" layoutY="344.0" AnchorPane.bottomAnchor="-31.0" AnchorPane.rightAnchor="-17.0">
+               <image>
+                  <Image url="@../assets/Medicine-bro.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgWaitingPatient" fitHeight="548.0" fitWidth="548.0" layoutX="764.0" layoutY="305.0" opacity="0.0" AnchorPane.bottomAnchor="-18.0" AnchorPane.rightAnchor="-42.0">
+               <image>
+                  <Image url="@../assets/Waiting-pana.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgDoctorAndPrescriptions" fitHeight="548.0" fitWidth="548.0" opacity="0.0" AnchorPane.bottomAnchor="-12.0" AnchorPane.rightAnchor="-20.0">
+               <image>
+                  <Image url="@../assets/Medical%20prescription-pana%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgDoctorCheckingPatientReport" fitHeight="577.0" fitWidth="577.0" opacity="0.0" AnchorPane.bottomAnchor="-8.0" AnchorPane.rightAnchor="0.0">
+               <image>
+                  <Image url="@../assets/Rheumatology-amico.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgDoctorCheckingIncome" fitHeight="555.0" fitWidth="555.0" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <image>
+                  <Image url="@../assets/Money%20income-amico.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="47.0" layoutY="97.0" opacity="0.25" prefHeight="683.0" prefWidth="1166.0" style="-fx-background-color: BLACK;" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="97.0" />
+            <AnchorPane layoutY="56.0" prefHeight="296.0" prefWidth="1267.0" AnchorPane.bottomAnchor="480.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="56.0">
+               <children>
+                  <JFXButton fx:id="btnPatientManagment" alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" layoutX="90.0" layoutY="67.0" onAction="#patientManagementButtonOnAction" text="Patients Managment" textAlignment="CENTER" textFill="WHITE">
+                     <graphic>
+                        <ImageView accessibleRole="BUTTON" fitHeight="127.0" fitWidth="127.0">
+                           <image>
+                              <Image url="@../assets/hospitalisation.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnAllAppointments" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" graphicTextGap="12.0" layoutX="336.0" layoutY="76.0" text="All Appointments" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="111.0" fitWidth="112.0">
+                           <image>
+                              <Image url="@../assets/3448230.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnPrescriptions" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" graphicTextGap="12.0" layoutX="564.0" layoutY="76.0" text="Prescriptions" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="111.0" fitWidth="112.0">
+                           <image>
+                              <Image url="@../assets/prescription%20(3).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnPatientsReport" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" graphicTextGap="5.0" layoutX="775.0" layoutY="67.0" text="Patients Report" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="127.0" fitWidth="127.0">
+                           <image>
+                              <Image url="@../assets/personal-information.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnIncomeReports" buttonType="RAISED" contentDisplay="TOP" focusTraversable="false" graphicTextGap="12.0" layoutX="983.0" layoutY="76.0" text="Income Reports" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="111.0" fitWidth="112.0">
+                           <image>
+                              <Image url="@../assets/income.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <Label fx:id="lblChat" layoutX="132.0" layoutY="787.0" text="HI! Welcome to your dashboard Dr. Ayesh " textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="132.0">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="56.0" prefWidth="1267.0" style="-fx-background-color: #00BFA6;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="57.0" layoutY="13.0" text="Doctor Dashboard" textFill="WHITE" AnchorPane.bottomAnchor="13.0" AnchorPane.topAnchor="13.0">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnLogout" buttonType="RAISED" layoutX="1141.0" layoutY="11.0" onAction="#logoutBtnOnAction" prefHeight="28.0" prefWidth="112.0" style="-fx-background-color: #282A3A;" text="Logout" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="11.0">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="56.0" fitWidth="51.0" layoutX="14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../assets/PreventScripts-providers.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblDate" layoutX="261.0" layoutY="15.0" text="2023.03.18" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Separator layoutX="357.0" layoutY="13.0" orientation="VERTICAL" prefHeight="30.0" prefWidth="2.0" AnchorPane.bottomAnchor="13.0" AnchorPane.topAnchor="13.0" />
+            <Label fx:id="lblTime" layoutX="368.0" layoutY="15.0" text="00.00.00" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Circle fill="#aeaeae" layoutX="910.0" layoutY="28.0" radius="22.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="335.0" AnchorPane.topAnchor="6.0" />
+            <Label fx:id="lblDoctorName" alignment="CENTER" layoutX="940.0" layoutY="16.0" prefHeight="23.0" prefWidth="195.0" text="Dr. Ayesh Perera" textFill="WHITE" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="137.0" AnchorPane.topAnchor="17.0">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="80.0" fitWidth="101.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0">
+         <image>
+            <Image url="@../assets/medi-clinic-high-resolution-logo-white-on-transparent-background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="21.0" layoutX="28.0" layoutY="783.0" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="28.0">
+         <image>
+            <Image url="@../assets/4883113.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

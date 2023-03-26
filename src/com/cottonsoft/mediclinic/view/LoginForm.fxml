@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1267.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cottonsoft.mediclinic.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="591.0" layoutX="50.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/undraw_medicine_b1ol.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <AnchorPane layoutX="690.0" prefHeight="832.0" prefWidth="580.0" style="-fx-background-color: #00BFA6;">
+         <children>
+            <Label layoutX="232.0" layoutY="262.0" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtEmail" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="98.0" layoutY="347.0" prefHeight="36.0" prefWidth="393.0" promptText="Enter Email " style="-fx-text-fill: #282A3A;" unFocusColor="#282a3a">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Hyperlink layoutX="391.0" layoutY="457.0" opacity="0.97" text="Forgot Password?" textFill="WHITE" />
+            <JFXRadioButton fx:id="rBtnDoctor" contentDisplay="BOTTOM" layoutX="191.0" layoutY="500.0" selected="true" text="Doctor" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="userAccountType" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="rBtnPatient" contentDisplay="BOTTOM" layoutX="307.0" layoutY="500.0" text="Patient" textFill="WHITE" toggleGroup="$userAccountType">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXButton fx:id="btnSignIn" buttonType="RAISED" layoutX="100.0" layoutY="562.0" onAction="#signInOnAction" prefHeight="48.0" prefWidth="393.0" style="-fx-background-color: #282A3A;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnCreateAnAccount" buttonType="RAISED" layoutX="101.0" layoutY="665.0" onAction="#createAnAccountOnAction" prefHeight="48.0" prefWidth="393.0" style="-fx-background-color: #282A3A;" text="Create an Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="284.0" layoutY="625.0" text="OR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="162.0" fitWidth="190.0" layoutX="198.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/medi-clinic-high-resolution-logo-white-on-transparent-background.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="124.0" layoutX="376.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/PreventScripts-providers.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="235.0" layoutY="765.0" text="From : CottonSoft" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="248.0" layoutY="785.0" text="Version : 1.0.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="200.0" layoutY="204.0" prefHeight="31.0" prefWidth="190.0" text="In Love with Life!" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="43.0" fitWidth="64.0" layoutX="210.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/4883113.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="txtPwd" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="97.0" layoutY="416.0" prefHeight="36.0" prefWidth="393.0" promptText="Password here" style="-fx-text-fill: #282A3A;" unFocusColor="#282a3a">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="171.0" layoutY="638.0" prefHeight="90.0" prefWidth="350.0" text="WELCOME!" textFill="#282a3a">
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

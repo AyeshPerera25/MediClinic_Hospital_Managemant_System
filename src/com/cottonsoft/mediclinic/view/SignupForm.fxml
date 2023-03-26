@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1267.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cottonsoft.mediclinic.controller.SignupFormController">
+   <children>
+      <AnchorPane fx:id="signupContext" prefHeight="832.0" prefWidth="778.0" style="-fx-background-color: #282A3A;">
+         <children>
+            <Label layoutX="23.0" layoutY="7.0" prefHeight="58.0" prefWidth="281.0" text="Register here," textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="30.0" />
+               </font>
+            </Label>
+            <Separator layoutX="23.0" layoutY="65.0" prefHeight="14.0" prefWidth="733.0" />
+            <JFXRadioButton fx:id="rBtnDoctor" contentDisplay="BOTTOM" layoutX="226.0" layoutY="203.0" onAction="#doctorRBtnOnAction" selected="true" text="Doctor" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="userSignupAccountType" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="rBtnPatient" contentDisplay="BOTTOM" layoutX="426.0" layoutY="203.0" onAction="#patientRBtnOnAction" text="Patient" textFill="WHITE" toggleGroup="$userSignupAccountType">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXRadioButton>
+            <ImageView fitHeight="76.0" fitWidth="76.0" layoutX="233.0" layoutY="117.0">
+               <image>
+                  <Image url="@../assets/2852407%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="76.0" fitWidth="76.0" layoutX="434.0" layoutY="117.0">
+               <image>
+                  <Image url="@../assets/1686058.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtFirstName" focusColor="#00bfa6" labelFloat="true" layoutX="41.0" layoutY="274.0" prefHeight="31.0" prefWidth="320.0" promptText="First Name" style="-fx-text-fill: WHITE" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtLastName" focusColor="#00bfa6" labelFloat="true" layoutX="412.0" layoutY="274.0" prefHeight="31.0" prefWidth="320.0" promptText="Last Name" style="-fx-text-fill: WHITE" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtNICNo" focusColor="#00bfa6" labelFloat="true" layoutX="41.0" layoutY="337.0" prefHeight="31.0" prefWidth="320.0" promptText="NIC No." style="-fx-text-fill: WHITE" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmail" focusColor="#00bfa6" labelFloat="true" layoutX="41.0" layoutY="402.0" prefHeight="31.0" prefWidth="320.0" promptText="Enter email here," style="-fx-text-fill: WHITE" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnSignUp" buttonType="RAISED" layoutX="41.0" layoutY="604.0" onAction="#signUpOnAction" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #00BFA6;" text="Sign up" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnAlredyHaveAcc" buttonType="RAISED" layoutX="41.0" layoutY="704.0" onAction="#alreadyHaveAnAccountOnAction" opacity="0.89" prefHeight="31.0" prefWidth="320.0" style="-fx-background-color: #00BFA6;" text="Already have an Account" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="193.0" layoutY="670.0" text="OR" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="802.0" text="From : CottonSoft" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgEmailValid" fitHeight="31.0" fitWidth="34.0" layoutX="362.0" layoutY="401.0" visible="false">
+               <image>
+                  <Image url="@../assets/Tick-Icon-SVG-psokcd.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgNICValid" fitHeight="31.0" fitWidth="34.0" layoutX="363.0" layoutY="337.0" visible="false">
+               <image>
+                  <Image url="@../assets/Tick-Icon-SVG-psokcd.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgNICInvalid" fitHeight="23.0" fitWidth="25.0" focusTraversable="true" layoutX="367.0" layoutY="341.0" visible="false">
+               <image>
+                  <Image url="@../assets/error%20-%20Copy.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEmailInvalid" fitHeight="23.0" fitWidth="25.0" layoutX="367.0" layoutY="405.0" visible="false">
+               <image>
+                  <Image url="@../assets/error%20-%20Copy.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgPwdTypAgainValid" fitHeight="31.0" fitWidth="34.0" layoutX="363.0" layoutY="533.0" visible="false">
+               <image>
+                  <Image url="@../assets/Tick-Icon-SVG-psokcd.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgPwdTypAgainInvalid" fitHeight="23.0" fitWidth="25.0" layoutX="368.0" layoutY="537.0" visible="false">
+               <image>
+                  <Image url="@../assets/error%20-%20Copy.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="txtPwd1" focusColor="#00bfa6" labelFloat="true" layoutX="41.0" layoutY="468.0" prefHeight="31.0" prefWidth="320.0" promptText="Password here," style="-fx-text-fill: WHITE;" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="txtPwd11" focusColor="#00bfa6" labelFloat="true" layoutX="41.0" layoutY="533.0" prefHeight="31.0" prefWidth="320.0" promptText="Type Password again," style="-fx-text-fill: WHITE;" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <Label fx:id="lblEmailInValidReason" layoutX="400.0" layoutY="408.0" textFill="RED" />
+            <Label fx:id="lblNICInValidReason" layoutX="400.0" layoutY="344.0" textFill="RED" />
+            <Label fx:id="lblPwdInValidReason" layoutX="400.0" layoutY="540.0" textFill="RED" />
+         </children></AnchorPane>
+      <ImageView fx:id="imgDoctors" fitHeight="706.0" fitWidth="706.0" layoutX="572.0" layoutY="273.0">
+         <image>
+            <Image url="@../assets/Doctors-pana.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPatients" fitHeight="637.0" fitWidth="642.0" layoutX="636.0" layoutY="316.0" visible="false">
+         <image>
+            <Image url="@../assets/Public%20health-pana.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="159.0" fitWidth="200.0" layoutX="915.0" layoutY="80.0">
+         <image>
+            <Image url="@../assets/medi-clinic-high-resolution-logo-black-on-transparent-background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="930.0" layoutY="181.0">
+         <image>
+            <Image url="@../assets/4883113.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="928.0" layoutY="239.0" prefHeight="31.0" prefWidth="190.0" text="In Love with Life!">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="883.0" layoutY="302.0" text="Registration Form!" textFill="#00bfa6">
+         <font>
+            <Font name="Calibri Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="586.0" layoutY="802.0" text="Version : 1.0.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="813.0" layoutY="340.0" opacity="0.6" prefHeight="31.0" prefWidth="421.0" text="Seems like you are new to here" textFill="#282a3a">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="813.0" layoutY="367.0" opacity="0.6" prefHeight="31.0" prefWidth="421.0" text=" Lets get Started!" textFill="#282a3a">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
