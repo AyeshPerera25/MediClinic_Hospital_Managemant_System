@@ -29,9 +29,25 @@
 
 •Hibernate ORM
 
-•MySQL database
+#Doctor/Patient Loggin UI.
 
-•HTML/CSS/JavaScript
+![image](https://raw.githubusercontent.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Initial%20Loggin.png)
+
+#Doctor Registration UI.
+
+![image](https://raw.githubusercontent.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Add%20Doctor.png)
+
+#Patient Registration UI.
+
+![image](https://raw.githubusercontent.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Add%20Patient.png)
+
+#Loggin Initial UI.
+
+![image](https://raw.githubusercontent.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Initial%20Loggin.png)
+
+#Doctor Dashboard UI.
+
+![image](https://raw.githubusercontent.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/DashBoard.png)
 
 # Contributors
 •Ayesh Perera
