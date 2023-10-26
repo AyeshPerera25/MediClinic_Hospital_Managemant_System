@@ -31,24 +31,24 @@
 
 #Doctor/Patient Loggin UI.
 
-![image](https://github.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/DashBoard.png?raw=true)
+![image](https://github.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Loggin%20form.png?raw=true)
 
 #Doctor Registration UI.
 
-![image](https://raw.githubusercontent.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Add%20Doctor.png)
+![image](https://github.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Add%20Doctor.png?raw=true)
 
 
 #Patient Registration UI.
 
-![image](https://raw.githubusercontent.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Add%20Patient.png)
+![image](https://github.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Add%20Patient.png?raw=true)
 
 #Loggin Initial UI.
 
-![image](https://raw.githubusercontent.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Initial%20Loggin.png)
+![image](https://github.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Initial%20Loggin.png?raw=true)
 
 #Doctor Dashboard UI.
 
-![image](https://raw.githubusercontent.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/DashBoard.png)
+![image](https://github.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/DashBoard.png?raw=true)
 
 # Contributors
 •Ayesh Perera
