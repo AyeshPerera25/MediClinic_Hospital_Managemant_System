@@ -31,11 +31,12 @@
 
 #Doctor/Patient Loggin UI.
 
-![image](https://raw.githubusercontent.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Initial%20Loggin.png)
+![image](https://github.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/DashBoard.png?raw=true)
 
 #Doctor Registration UI.
 
 ![image](https://raw.githubusercontent.com/AyeshPerera25/MediClinic_Hospital_Managemant_System/blob/master/src/com/cottonsoft/mediclinic/Image/Add%20Doctor.png)
+
 
 #Patient Registration UI.
 
