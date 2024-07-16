@@ -9,4 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jfoenix-8.0.8" level="project" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="4e0aa45b-924a-44e0-b340-000cec6756e9" />
+  </component>
 </module>
